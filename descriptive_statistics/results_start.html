@@ -24,6 +24,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <!-- I'll start by copying the navbar example and tweaking it -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <i class="fa fa-calculator"></i> Omnicalc</a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav hidden-md hidden-lg">
+          <li><a href="../word_count/new_start.html"><i class="fa fa-book"></i> Word Count</a></li>
+          <li><a href="../loan_payment/new_start.html"><i class="fa fa-money"></i> Loan Payment</a></li>
+          <li><a href="../time_between/new_start.html"><i class="fa fa-clock-o"></i> Time Between</a></li>
+          <li><a href="../descriptive_statistics/new_start.html"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Skeleton here -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hidden-xs hidden-sm"> <!-- had to fine tune this. didnt get right on shoelace -->
+        <!-- our sidebar thing -->
+        <div class="list-group">
+          <a href="../word_count/new_start.html" class="list-group-item"><i class="fa fa-book"></i> Word Count</a>
+          <a href="../loan_payment/new_start.html" class="list-group-item"><i class="fa fa-money"></i> Loan Payment</a>
+          <a href="../time_between/new_start.html" class="list-group-item"><i class="fa fa-clock-o"></i> Time Between</a>
+          <a href="../descriptive_statistics/new_start.html" class="list-group-item"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <!-- Our piece that changes -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel_title">Descriptive Statistics Results</h2>
+          </div>
+          <div class="panel-body">
+            <dl class="dl-horizontal">
+              <dt>Numbers</dt><dd>[]</dd>
+              <dt>Sorted Numbers</dt><dd>[]</dd>
+              <dt>Count</dt><dd>0</dd>
+              <dt>Minimum</dt><dd></dd>
+              <dt>Maximum</dt><dd></dd>
+              <dt>Range</dt><dd></dd>
+              <dt>Median</dt><dd></dd>
+              <dt>Sum</dt><dd></dd>
+              <dt>Mean</dt><dd></dd>
+              <dt>Variance</dt><dd></dd>
+              <dt>Standard Deviation</dt><dd></dd>
+              <dt>Mode</dt><dd></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

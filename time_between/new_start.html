@@ -24,6 +24,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <!-- I'll start by copying the navbar example and tweaking it -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <i class="fa fa-calculator"></i> Omnicalc</a>
+      </div>
 
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav hidden-md hidden-lg">
+          <li><a href="../word_count/new_start.html"><i class="fa fa-book"></i> Word Count</a></li>
+          <li><a href="../loan_payment/new_start.html"><i class="fa fa-money"></i> Loan Payment</a></li>
+          <li><a href="../time_between/new_start.html"><i class="fa fa-clock-o"></i> Time Between</a></li>
+          <li><a href="../descriptive_statistics/new_start.html"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- Skeleton here -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 hidden-xs hidden-sm"> <!-- had to fine tune this. didnt get right on shoelace -->
+        <!-- our sidebar thing -->
+        <div class="list-group">
+          <a href="../word_count/new_start.html" class="list-group-item"><i class="fa fa-book"></i> Word Count</a>
+          <a href="../loan_payment/new_start.html" class="list-group-item"><i class="fa fa-money"></i> Loan Payment</a>
+          <a href="../time_between/new_start.html" class="list-group-item"><i class="fa fa-clock-o"></i> Time Between</a>
+          <a href="../descriptive_statistics/new_start.html" class="list-group-item"><i class="fa fa-bar-chart"></i> Descriptive Statistics</a>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <!-- Our piece that changes -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel_title">New Time Between Calculation</h2>
+          </div>
+          <div class="panel-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="inputTl" class="col-sm-2 control-label">Starting Time</label>
+                <div class="col-sm-10">
+                 <!-- Couldnt find the exact control, but this will do for now -->
+                 <input type="datetime-local" class="form-control" id="inputT1">
+               </div>
+             </div>
+             <div class="form-group">
+              <label for="inputT2" class="col-sm-2 control-label">Ending Time</label>
+              <div class="col-sm-10">
+                <input type="datetime-local" class="form-control" id="inputT2">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <!-- using <a> instead of button, as per our past example in class -->
+                <a class="btn btn-primary btn-block" href="./results_start.html">Submit</a>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
